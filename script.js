@@ -23,16 +23,13 @@ function closeVideoModal() {
     box.classList.add('scale-95');
     document.body.style.overflow = '';
 
-    // Stop video by clearing src
     setTimeout(() => { frame.src = ''; }, 300);
 }
 
-// Close when clicking backdrop
 document.getElementById('videoModal').addEventListener('click', function (e) {
     if (e.target === this) closeVideoModal();
 });
 
-// Close with Escape key
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeVideoModal();
 });
