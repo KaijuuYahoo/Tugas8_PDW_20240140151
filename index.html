@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LensaBidik Group - Profil Perusahaan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-slate-900 font-sans">
+
+  <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-black text-red-700 tracking-tighter">LENSA<span class="text-slate-800">BIDIK</span>
+      </div>
+      <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wider">
+        <a href="#tentang" class="hover:text-red-700 transition">Tentang Kami</a>
+        <a href="#layanan" class="hover:text-red-700 transition">Layanan</a>
+        <a href="#statistik" class="hover:text-red-700 transition">Pencapaian</a>
+        <a href="#tim" class="hover:text-red-700 transition">Manajemen</a>
+      </div>
+      <a href="#kontak"
+        class="bg-red-700 text-white px-6 py-2 rounded-full font-bold hover:bg-red-800 transition shadow-lg shadow-red-200">Kerjasama</a>
+    </div>
+  </nav>
+
+  <header class="relative h-[80vh] flex items-center justify-center text-center px-4 overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=2070"
+      class="absolute inset-0 w-full h-full object-cover" alt="Newsroom background">
+    <div class="absolute inset-0 bg-slate-900/70"></div>
+    <div class="relative z-10 max-w-4xl text-white">
+      <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">Menyuarakan Kebenaran, Membangun Peradaban.</h1>
+      <p class="text-xl md:text-2xl mb-10 opacity-90 font-light">LensaBidik Group adalah ekosistem media digital
+        terintegrasi yang menjangkau lebih dari 50 juta pembaca setiap bulannya.</p>
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <button onclick="openVideoModal()"
+          class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 px-10 py-4 rounded-lg font-bold text-lg transition">Tonton
+          Video Profil</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="videoModal"
+    class="fixed inset-0 z-[999] flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="modalBox"
+      class="relative w-full max-w-3xl mx-4 rounded-2xl overflow-hidden shadow-2xl scale-95 transition-transform duration-300">
+
+      <div class="bg-black aspect-video">
+        <iframe id="videoFrame" src="" data-src="LensaBidik_Group.mp4" class="w-full h-full"
+          allow="autoplay; encrypted-media; fullscreen" allowfullscreen frameborder="0">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <section id="statistik" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="p-6">
+          <div class="text-4xl md:text-5xl font-black text-red-700 mb-2">25th</div>
+          <p class="text-gray-600 font-medium uppercase text-sm tracking-widest">Pengalaman</p>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl md:text-5xl font-black text-red-700 mb-2">50M+</div>
+          <p class="text-gray-600 font-medium uppercase text-sm tracking-widest">Pembaca Bulanan</p>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl md:text-5xl font-black text-red-700 mb-2">12</div>
+          <p class="text-gray-600 font-medium uppercase text-sm tracking-widest">Kanal Berita</p>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl md:text-5xl font-black text-red-700 mb-2">500+</div>
+          <p class="text-gray-600 font-medium uppercase text-sm tracking-widest">Jurnalis Lokal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
+      <div class="max-w-2xl">
+        <h2 class="text-red-700 font-bold uppercase tracking-widest mb-4">Layanan Kami</h2>
+        <h3 class="text-4xl font-black leading-tight text-slate-800">Solusi Media Terintegrasi untuk Pertumbuhan Bisnis
+          Anda</h3>
+      </div>
+      <p class="text-gray-500 md:max-w-xs pb-2">Kami menyediakan berbagai platform untuk menyampaikan pesan brand Anda
+        kepada audiens yang tepat.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div
+        class="group p-8 border border-gray-100 rounded-3xl hover:bg-white hover:shadow-2xl hover:border-transparent transition duration-300">
+        <div
+          class="w-14 h-14 bg-red-50 text-red-700 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-red-700 group-hover:text-white transition">
+          <i class="fas fa-ad"></i>
+        </div>
+        <h4 class="text-2xl font-bold mb-4">Digital Advertising</h4>
+        <p class="text-gray-600">Iklan display, native ads, dan programmatic advertising di seluruh jaringan media kami.
+        </p>
+      </div>
+      <div
+        class="group p-8 border border-gray-100 rounded-3xl hover:bg-white hover:shadow-2xl hover:border-transparent transition duration-300">
+        <div
+          class="w-14 h-14 bg-red-50 text-red-700 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-red-700 group-hover:text-white transition">
+          <i class="fas fa-video"></i>
+        </div>
+        <h4 class="text-2xl font-bold mb-4">Content Production</h4>
+        <p class="text-gray-600">Produksi konten video berkualitas tinggi, podcast, dan artikel bersponsor
+          (advertorial).</p>
+      </div>
+      <div
+        class="group p-8 border border-gray-100 rounded-3xl hover:bg-white hover:shadow-2xl hover:border-transparent transition duration-300">
+        <div
+          class="w-14 h-14 bg-red-50 text-red-700 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-red-700 group-hover:text-white transition">
+          <i class="fas fa-users"></i>
+        </div>
+        <h4 class="text-2xl font-bold mb-4">Community Activation</h4>
+        <p class="text-gray-600">Menghubungkan brand Anda langsung dengan komunitas pembaca setia kami secara luring dan
+          daring.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tim" class="py-24 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-black mb-4">Dewan Direksi</h2>
+        <p class="text-gray-400 max-w-xl mx-auto">Dipimpin oleh para profesional berpengalaman di industri media selama
+          puluhan tahun.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center group">
+          <!-- Foto diperkecil: lebar & tinggi tetap w-28 h-28, bulat, dan ditengahkan -->
+          <div class="flex justify-center mb-6">
+            <div
+              class="w-28 h-28 rounded-full overflow-hidden ring-4 ring-red-700/40 group-hover:ring-red-500 transition duration-300">
+              <img src="https://ui-avatars.com/api/?name=CEO+Media&background=b91c1c&color=fff&size=200"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500" alt="CEO">
+            </div>
+          </div>
+          <h5 class="text-xl font-bold">Rahmat Hidayat</h5>
+          <p class="text-red-500 font-medium">Chief Executive Officer</p>
+        </div>
+
+        <div class="text-center group">
+          <div class="flex justify-center mb-6">
+            <div
+              class="w-28 h-28 rounded-full overflow-hidden ring-4 ring-red-700/40 group-hover:ring-red-500 transition duration-300">
+              <img src="https://ui-avatars.com/api/?name=Editor+In+Chief&background=b91c1c&color=fff&size=200"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500"
+                alt="Editor">
+            </div>
+          </div>
+          <h5 class="text-xl font-bold">Linda Wijaya</h5>
+          <p class="text-red-500 font-medium">Pemimpin Redaksi</p>
+        </div>
+
+        <div class="text-center group">
+          <div class="flex justify-center mb-6">
+            <div
+              class="w-28 h-28 rounded-full overflow-hidden ring-4 ring-red-700/40 group-hover:ring-red-500 transition duration-300">
+              <img src="https://ui-avatars.com/api/?name=Marketing+Director&background=b91c1c&color=fff&size=200"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500"
+                alt="Marketing">
+            </div>
+          </div>
+          <h5 class="text-xl font-bold">Denny Setiawan</h5>
+          <p class="text-red-500 font-medium">Direktur Komersial</p>
+        </div>
+
+        <div class="text-center group">
+          <div class="flex justify-center mb-6">
+            <div
+              class="w-28 h-28 rounded-full overflow-hidden ring-4 ring-red-700/40 group-hover:ring-red-500 transition duration-300">
+              <img src="https://ui-avatars.com/api/?name=CTO&background=b91c1c&color=fff&size=200"
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500" alt="CTO">
+            </div>
+          </div>
+          <h5 class="text-xl font-bold">Irvan Hakim</h5>
+          <p class="text-red-500 font-medium">Chief Technology Officer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="kontak" class="py-16 px-6 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div>
+        <div class="text-3xl font-black text-red-700 mb-4">LENSA<span class="text-slate-800">BIDIK</span></div>
+        <p class="text-gray-500 max-w-sm">Gedung Pers Indonesia, Lt. 12-15. Jl. Merdeka No. 101, Jakarta Pusat.</p>
+      </div>
+      <div class="flex flex-col items-center md:items-end">
+        <p class="font-bold mb-4">Mari Berkolaborasi</p>
+        <a href="mailto:muhammad.rasyid.ft24@mail.umy.ac.id"
+          class="text-2xl text-red-700 font-black hover:underline">muhammad.rasyid.ft24@mail.umy.ac.id</a>
+        <div class="flex gap-6 mt-6 text-xl text-slate-400">
+          <a href="https://www.linkedin.com/in/muhammad-rasyid-ridha-aqimuddin-b52237288?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            class="hover:text-red-700"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/rsyidridh/" class="hover:text-red-700"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-50 text-center text-sm text-gray-400">
+      &copy; 2026 LensaBidik Group. All Rights Reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
